@@ -1,15 +1,14 @@
-<html lang="no">
+<html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kjøp unike t-skjorter og gensere fra vår nettbutikk! Designene våre er inspirert av kreativitet og stil.">
-    <title>Merch Butikk - Unike T-skjorter og Gensere</title>
+    <meta name="description" content="Buy unique t-shirts and sweatshirts from our online store! Our designs are inspired by creativity and style.">
+    <title>Merch Store - Unique T-Shirts and Sweatshirts</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
     <style>
-        /* Generelle stiler */
+        /* General styles */
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
@@ -35,7 +34,7 @@
             margin-top: 10px;
         }
 
-        /* Navigasjonsmeny */
+        /* Navigation menu */
         nav {
             background-color: #333;
             padding: 15px;
@@ -55,7 +54,7 @@
             border-radius: 5px;
         }
 
-        /* Introduksjon og om oss */
+        /* Introduction and about us */
         .about-section {
             display: flex;
             justify-content: space-around;
@@ -77,7 +76,7 @@
             line-height: 1.6;
         }
 
-        /* Why Us-seksjon */
+        /* Why Us section */
         .why-us {
             background-color: #fff;
             padding: 50px 20px;
@@ -106,7 +105,7 @@
             color: #444;
         }
 
-        /* Produkter */
+        /* Products */
         .product-gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -178,43 +177,43 @@
 <body>
 
 <header>
-    <h1>Velkommen til Merch Butikk</h1>
-    <p>Unike T-skjorter og Gensere for Kreative Sjeler</p>
+    <h1>Welcome to Merch Store</h1>
+    <p>Unique T-Shirts and Sweatshirts for Creative Souls</p>
 </header>
 
 <nav>
-    <a href="#">Hjem</a>
-    <a href="#about">Om Oss</a>
-    <a href="#why-us">Hvorfor Velge Oss?</a>
-    <a href="#products">Produkter</a>
+    <a href="#">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#why-us">Why Choose Us?</a>
+    <a href="#products">Products</a>
 </nav>
 
 <section id="about" class="about-section">
     <div>
-        <h2>Om Merch Butikk</h2>
-        <p>Merch Butikk ble grunnlagt med én misjon: å tilby kreative og unike design på t-skjorter og gensere til alle som elsker å uttrykke seg gjennom stil. Vi jobber med talentfulle designere for å lage produkter som står ut, samtidig som vi bruker miljøvennlige materialer og bærekraftige produksjonsmetoder.</p>
+        <h2>About Merch Store</h2>
+        <p>Merch Store was founded with one mission: to offer creative and unique designs on t-shirts and sweatshirts for anyone who loves to express themselves through style. We work with talented designers to create products that stand out while using eco-friendly materials and sustainable production methods.</p>
     </div>
     <div>
-        <img src="https://via.placeholder.com/500" alt="T-skjorte Design" />
+        <img src="https://via.placeholder.com/500" alt="T-shirt Design" />
     </div>
 </section>
 
 <section id="why-us" class="why-us">
-    <h2>Hvorfor Velge Oss?</h2>
-    <p>Vi tilbyr mer enn bare klær – vi tilbyr en måte å uttrykke deg selv på. Her er noen grunner til hvorfor du bør handle hos oss:</p>
+    <h2>Why Choose Us?</h2>
+    <p>We offer more than just clothes – we offer a way to express yourself. Here are some reasons why you should shop with us:</p>
     <ul>
-        <li>💡 Unike og kreative design som ingen andre har.</li>
-        <li>🌍 Bærekraftig produksjon med miljøvennlige materialer.</li>
-        <li>🔄 Rask frakt og enkel returordning.</li>
-        <li>🎨 Nye design legges til jevnlig – alltid noe nytt å oppdage!</li>
+        <li>💡 Unique and creative designs that no one else has.</li>
+        <li>🌍 Sustainable production with eco-friendly materials.</li>
+        <li>🔄 Fast shipping and easy returns.</li>
+        <li>🎨 New designs are added regularly – always something new to discover!</li>
     </ul>
 </section>
 
 <section id="products" class="product-gallery">
     <div class="product-card">
-        <img src="https://via.placeholder.com/400x400" alt="Produkt 1" />
-        <h3>Basic T-skjorte</h3>
-        <p>En klassisk t-skjorte med et minimalistisk design.</p>
+        <img src="https://via.placeholder.com/400x400" alt="Product 1" />
+        <h3>Basic T-Shirt</h3>
+        <p>A classic t-shirt with a minimalist design.</p>
         <div class="price">199 NOK</div>
 
         <!-- PayPal button -->
@@ -222,9 +221,9 @@
     </div>
 
     <div class="product-card">
-        <img src="https://via.placeholder.com/400x400" alt="Produkt 2" />
-        <h3>Vintage Genser</h3>
-        <p>En stilfull genser med et retro design.</p>
+        <img src="https://via.placeholder.com/400x400" alt="Product 2" />
+        <h3>Vintage Sweater</h3>
+        <p>A stylish sweater with a retro design.</p>
         <div class="price">399 NOK</div>
 
         <!-- PayPal button -->
@@ -232,9 +231,9 @@
     </div>
 
     <div class="product-card">
-        <img src="https://via.placeholder.com/400x400" alt="Produkt 3" />
-        <h3>Grafisk T-skjorte</h3>
-        <p>En iøynefallende t-skjorte med et grafisk trykk.</p>
+        <img src="https://via.placeholder.com/400x400" alt="Product 3" />
+        <h3>Graphic T-Shirt</h3>
+        <p>A striking t-shirt with a graphic print.</p>
         <div class="price">249 NOK</div>
 
         <!-- PayPal button -->
@@ -242,8 +241,12 @@
     </div>
 </section>
 
+<footer>
+    <p>&copy; 2024 Merch Store | All rights reserved</p>
+</footer>
+
 <script>
-    // Funksjon for å rendere PayPal-knappene
+    // Function to render PayPal buttons
     function renderPaypalButton(productId, price) {
         paypal.Buttons({
             createOrder: function(data, actions) {
@@ -257,16 +260,16 @@
             },
             onApprove: function(data, actions) {
                 return actions.order.capture().then(function(details) {
-                    alert('Betalingen var vellykket, ' + details.payer.name.given_name);
+                    alert('Payment was successful, ' + details.payer.name.given_name);
                 });
             },
             onError: function(err) {
-                alert('Noe gikk galt. Prøv igjen senere.');
+                alert('Something went wrong. Please try again later.');
             }
-        }).render('#paypal-button-container-' + productId);  // Plasseringen av knappen
+        }).render('#paypal-button-container-' + productId);  // Button placement
     }
 
-    // Kjør funksjonen når dokumentet er lastet
+    // Run the function when the document is loaded
     document.addEventListener('DOMContentLoaded', function() {
         renderPaypalButton(1, '199.00');
         renderPaypalButton(2, '399.00');

@@ -171,7 +171,7 @@
     </style>
 
     <!-- PayPal SDK -->
-    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&components=buttons"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=AX9h_vpCyfAeEmRzIVGea-SJmmtvepfZgJgaN9iJGYZ7Yeg6mBSV1CeP-tYDXKkEiFObaLT5lOLuHL_W&components=buttons"></script>
 
 </head>
 

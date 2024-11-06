@@ -171,7 +171,7 @@
     </style>
 
     <!-- PayPal SDK -->
-    <script src="https://www.paypal.com/sdk/js?client-id=AW2UIudWDoqMUj9HIBBD-D2Y5ohbyzvt9h09NaYXdbSOeG3uZxzB81yfn9HgPWoSwBrIgcRcJoNKbttB&components=buttons"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=AX9h_vpCyfAeEmRzIVGea-SJmmtvepfZgJgaN9iJGYZ7Yeg6mBSV1CeP-tYDXKkEiFObaLT5lOLuHL_W&components=buttons"></script>
 
 </head>
 

@@ -242,10 +242,6 @@
     </div>
 </section>
 
-<footer>
-    <p>&copy; 2024 Merch Butikk | Alle rettigheter reservert</p>
-</footer>
-
 <script>
     // Funksjon for å rendere PayPal-knappene
     function renderPaypalButton(productId, price) {

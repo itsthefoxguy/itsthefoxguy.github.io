@@ -6,8 +6,6 @@
     <meta name="description" content="Buy unique t-shirts and sweatshirts from our online store! Our designs are inspired by creativity and style.">
     <title>Merch Store - Unique T-Shirts and Sweatshirts</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <!-- Font Awesome CDN for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <style>
         /* General styles */
@@ -56,10 +54,10 @@
             border-radius: 5px;
         }
 
-        /* Introduction and about us */
+        /* About Us Section */
         .about-section {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             padding: 50px 20px;
             background-color: #e4e4e4;
         }
@@ -78,7 +76,7 @@
             line-height: 1.6;
         }
 
-        /* Why Us section */
+        /* Why Us Section */
         .why-us {
             background-color: #fff;
             padding: 50px 20px;
@@ -100,48 +98,38 @@
             margin-bottom: 30px;
         }
 
-        .why-us .content {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 50px;
-            flex-wrap: wrap;
-        }
-
-        .why-us .content .left, .why-us .content .right {
-            width: 100%;
-            max-width: 50%;
-        }
-
-        .why-us ul {
+        /* Why Choose Us List */
+        .why-us-list {
             list-style-type: none;
             padding: 0;
             margin: 0;
-            text-align: left;
-        }
-
-        .why-us ul li {
-            font-size: 1.2em;
-            color: #444;
-            margin-bottom: 20px;
             display: flex;
-            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;  /* Gap between items */
         }
 
-        .why-us ul li i {
-            font-size: 1.8em;
-            margin-right: 15px;
-            color: #4CAF50; /* Grønne ikoner */
+        .why-us-list li {
+            font-size: 1.3em;
+            color: #444;
+            max-width: 250px; /* Control max size for list items */
+            text-align: center;
+            line-height: 1.6;
         }
 
-        /* Product Gallery */
+        .why-us-list li i {
+            font-size: 2em;
+            color: #4CAF50;  /* Green icons */
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        /* Products */
         .product-gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
             padding: 40px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
         }
 
         .product-card {
@@ -150,17 +138,11 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             text-align: center;
-            transition: transform 0.3s ease;
-        }
-
-        .product-card:hover {
-            transform: translateY(-10px); /* Hover effect for a lift */
         }
 
         .product-card img {
             width: 100%;
             height: auto;
-            border-bottom: 2px solid #f2f2f2;
         }
 
         .product-card h3 {
@@ -178,7 +160,6 @@
             font-size: 1.5em;
             color: #4CAF50;
             font-weight: bold;
-            margin-bottom: 15px;
         }
 
         .product-card .button {
@@ -196,6 +177,7 @@
             background-color: #45a049;
         }
 
+        /* Footer */
         footer {
             background-color: #333;
             color: white;
@@ -204,6 +186,26 @@
             position: fixed;
             width: 100%;
             bottom: 0;
+        }
+
+        /* Discord button */
+        .discord-button {
+            background-color: #7289da;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .discord-button:hover {
+            background-color: #5b6eae;
+        }
+
+        .discord-button i {
+            margin-right: 10px;
         }
     </style>
 
@@ -236,19 +238,12 @@
 <section id="why-us" class="why-us">
     <h2>Why Choose Us?</h2>
     <p>We offer more than just clothes – we offer a way to express yourself. Here are some reasons why you should shop with us:</p>
-    <div class="content">
-        <div class="left">
-            <!-- You can add more text here if needed -->
-        </div>
-        <div class="right">
-            <ul>
-                <li><i class="fas fa-lightbulb"></i>💡 Unique and creative designs that no one else has.</li>
-                <li><i class="fas fa-globe"></i>🌍 Sustainable production with eco-friendly materials.</li>
-                <li><i class="fas fa-truck"></i>🔄 Fast shipping and easy returns.</li>
-                <li><i class="fas fa-palette"></i>🎨 New designs are added regularly – always something new to discover!</li>
-            </ul>
-        </div>
-    </div>
+    <ul class="why-us-list">
+        <li><i class="fas fa-lightbulb"></i> Unique and creative designs that no one else has.</li>
+        <li><i class="fas fa-globe"></i> Sustainable production with eco-friendly materials.</li>
+        <li><i class="fas fa-truck"></i> Fast shipping and easy returns.</li>
+        <li><i class="fas fa-palette"></i> New designs are added regularly – always something new to discover!</li>
+    </ul>
 </section>
 
 <section id="products" class="product-gallery">
@@ -295,9 +290,8 @@
 
 <footer>
     <p>&copy; 2024 Merch Store | All rights reserved</p>
+    <a href="https://discord.com" class="discord-button"><i class="fab fa-discord"></i> Join Our Discord</a>
 </footer>
-
-<script src="https://www.paypal.com/sdk/js?client-id=AX9h_vpCyfAeEmRzIVGea-SJmmtvepfZgJgaN9iJGYZ7Yeg6mBSV1CeP-tYDXKkEiFObaLT5lOLuHL_W&components=buttons"></script>
 
 <script>
     // Function to render PayPal buttons
@@ -335,4 +329,3 @@
 </body>
 
 </html>
-

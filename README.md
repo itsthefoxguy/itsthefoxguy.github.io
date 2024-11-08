@@ -81,7 +81,7 @@
 
         /* Why Us section */
         .why-us {
-            background-color: #f4f4f4;  
+            background-color: #f4f4f4;  /* Lys bakgrunn for kontrast */
             padding: 50px 20px;
             text-align: center;
         }
@@ -101,8 +101,8 @@
 
         .why-us-content {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsiv grid */
+            gap: 30px;  /* Avstand mellom elementene */
         }
 
         .why-us-item {
@@ -114,8 +114,8 @@
         }
 
         .why-us-item:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            transform: translateY(-10px); /* Liten heving ved hover */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Større skygge på hover */
         }
 
         .why-us-item i {
@@ -197,11 +197,11 @@
             padding: 15px 20px;
             width: 100%;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            box-sizing: border-box;
-            position: relative;
+            justify-content: center; /* Sentraliserer innholdet horisontalt */
+            align-items: center; /* Sentraliserer innholdet vertikalt */
+            gap: 10px; /* Legger til mellomrom mellom teksten og Discord-knappen */
+            box-sizing: border-box; /* Sørger for at padding og margin ikke påvirker totalbredde */
+            position: relative; /* Endret fra fixed til relative */
         }
 
         footer p {
@@ -226,21 +226,6 @@
 
         .discord-button i {
             margin-right: 10px;
-        }
-
-        /* Media Queries for Mobile */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.5em;
-            }
-
-            .product-gallery {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .why-us-content {
-                grid-template-columns: 1fr;
-            }
         }
     </style>
 
@@ -373,7 +358,6 @@
             onApprove: function(data, actions) {
                 return actions.order.capture().then(function(details) {
                     alert('Payment was successful, ' + details.payer.name.given_name);
-                    window.location.href = "/thank-you"; // Redirect after successful payment
                 });
             },
             onError: function(err) {

@@ -349,14 +349,6 @@
             <div class="price">249 NOK</div>
             <a href="#" class="button">Buy Now</a>
         </div>
-
-        <div class="product-card">
-            <img src="https://via.placeholder.com/400x400" alt="Hoodie">
-            <h3>Hoodie</h3>
-            <p>A cozy hoodie with a creative design.</p>
-            <div class="price">399 NOK</div>
-            <a href="#" class="button">Buy Now</a>
-        </div>
     </div>
 </section>
 

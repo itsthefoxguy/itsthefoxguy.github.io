@@ -6,6 +6,8 @@
     <meta name="description" content="Buy unique t-shirts and sweatshirts from our online store! Our designs are inspired by creativity and style.">
     <title>Merch Store - Unique T-Shirts and Sweatshirts</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <style>
         /* General styles */
@@ -57,7 +59,7 @@
         /* Introduction and about us */
         .about-section {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             padding: 50px 20px;
             background-color: #e4e4e4;
         }
@@ -81,36 +83,65 @@
             background-color: #fff;
             padding: 50px 20px;
             text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .why-us h2 {
             font-size: 2.5em;
             color: #333;
+            margin-bottom: 20px;
         }
 
         .why-us p {
             font-size: 1.2em;
             line-height: 1.8;
-            margin: 20px 0;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .why-us .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .why-us .content .left, .why-us .content .right {
+            width: 100%;
+            max-width: 50%;
         }
 
         .why-us ul {
             list-style-type: none;
             padding: 0;
+            margin: 0;
+            text-align: left;
         }
 
         .why-us ul li {
-            margin-bottom: 15px;
             font-size: 1.2em;
             color: #444;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
         }
 
-        /* Products */
+        .why-us ul li i {
+            font-size: 1.8em;
+            margin-right: 15px;
+            color: #4CAF50; /* Grønne ikoner */
+        }
+
+        /* Product Gallery */
         .product-gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
             padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .product-card {
@@ -119,11 +150,17 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px); /* Hover effect for a lift */
         }
 
         .product-card img {
             width: 100%;
             height: auto;
+            border-bottom: 2px solid #f2f2f2;
         }
 
         .product-card h3 {
@@ -141,6 +178,7 @@
             font-size: 1.5em;
             color: #4CAF50;
             font-weight: bold;
+            margin-bottom: 15px;
         }
 
         .product-card .button {
@@ -158,21 +196,16 @@
             background-color: #45a049;
         }
 
-        /* Footer */
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 15px 20px;
-            position: relative; /* Endret fra fixed til relative for bedre layout */
+            position: fixed;
             width: 100%;
-            box-sizing: border-box; /* Sørger for at padding ikke ødelegger layouten */
+            bottom: 0;
         }
-
     </style>
-
-    <!-- PayPal SDK -->
-    <script src="https://www.paypal.com/sdk/js?client-id=AX9h_vpCyfAeEmRzIVGea-SJmmtvepfZgJgaN9iJGYZ7Yeg6mBSV1CeP-tYDXKkEiFObaLT5lOLuHL_W&components=buttons"></script>
 
 </head>
 
@@ -203,16 +236,22 @@
 <section id="why-us" class="why-us">
     <h2>Why Choose Us?</h2>
     <p>We offer more than just clothes – we offer a way to express yourself. Here are some reasons why you should shop with us:</p>
-    <ul>
-        <li>💡 Unique and creative designs that no one else has.</li>
-        <li>🌍 Sustainable production with eco-friendly materials.</li>
-        <li>🔄 Fast shipping and easy returns.</li>
-        <li>🎨 New designs are added regularly – always something new to discover!</li>
-    </ul>
+    <div class="content">
+        <div class="left">
+            <!-- You can add more text here if needed -->
+        </div>
+        <div class="right">
+            <ul>
+                <li><i class="fas fa-lightbulb"></i>💡 Unique and creative designs that no one else has.</li>
+                <li><i class="fas fa-globe"></i>🌍 Sustainable production with eco-friendly materials.</li>
+                <li><i class="fas fa-truck"></i>🔄 Fast shipping and easy returns.</li>
+                <li><i class="fas fa-palette"></i>🎨 New designs are added regularly – always something new to discover!</li>
+            </ul>
+        </div>
+    </div>
 </section>
 
 <section id="products" class="product-gallery">
-    <!-- Product 1: Basic T-Shirt -->
     <div class="product-card">
         <img src="https://via.placeholder.com/400x400" alt="Product 1" />
         <h3>Basic T-Shirt</h3>
@@ -223,7 +262,6 @@
         <div id="paypal-button-container-1"></div>
     </div>
 
-    <!-- Product 2: Vintage Sweater -->
     <div class="product-card">
         <img src="https://via.placeholder.com/400x400" alt="Product 2" />
         <h3>Vintage Sweater</h3>
@@ -234,18 +272,6 @@
         <div id="paypal-button-container-2"></div>
     </div>
 
-    <!-- Product 3: Hettegenser (New) -->
-    <div class="product-card">
-        <img src="https://via.placeholder.com/400x400" alt="Product 4" />
-        <h3>Hettegenser</h3>
-        <p>En komfortabel hettegenser med moderne design.</p>
-        <div class="price">349 NOK</div>
-
-        <!-- PayPal button -->
-        <div id="paypal-button-container-4"></div>
-    </div>
-
-    <!-- Product 4: Graphic T-Shirt -->
     <div class="product-card">
         <img src="https://via.placeholder.com/400x400" alt="Product 3" />
         <h3>Graphic T-Shirt</h3>
@@ -255,11 +281,23 @@
         <!-- PayPal button -->
         <div id="paypal-button-container-3"></div>
     </div>
+
+    <div class="product-card">
+        <img src="https://via.placeholder.com/400x400" alt="Product 4" />
+        <h3>Hoodie</h3>
+        <p>A cozy hoodie for casual wear.</p>
+        <div class="price">399 NOK</div>
+
+        <!-- PayPal button -->
+        <div id="paypal-button-container-4"></div>
+    </div>
 </section>
 
 <footer>
     <p>&copy; 2024 Merch Store | All rights reserved</p>
 </footer>
+
+<script src="https://www.paypal.com/sdk/js?client-id=AX9h_vpCyfAeEmRzIVGea-SJmmtvepfZgJgaN9iJGYZ7Yeg6mBSV1CeP-tYDXKkEiFObaLT5lOLuHL_W&components=buttons"></script>
 
 <script>
     // Function to render PayPal buttons
@@ -289,11 +327,12 @@
     document.addEventListener('DOMContentLoaded', function() {
         renderPaypalButton(1, '199.00');
         renderPaypalButton(2, '399.00');
-        renderPaypalButton(3, '349.00'); // Hettegenser
-        renderPaypalButton(4, '249.00');
+        renderPaypalButton(3, '249.00');
+        renderPaypalButton(4, '399.00');
     });
 </script>
 
 </body>
 
 </html>
+

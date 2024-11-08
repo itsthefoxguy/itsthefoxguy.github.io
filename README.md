@@ -210,6 +210,7 @@
 </section>
 
 <section id="products" class="product-gallery">
+    <!-- Product 1: Basic T-Shirt -->
     <div class="product-card">
         <img src="https://via.placeholder.com/400x400" alt="Product 1" />
         <h3>Basic T-Shirt</h3>
@@ -220,6 +221,7 @@
         <div id="paypal-button-container-1"></div>
     </div>
 
+    <!-- Product 2: Vintage Sweater -->
     <div class="product-card">
         <img src="https://via.placeholder.com/400x400" alt="Product 2" />
         <h3>Vintage Sweater</h3>
@@ -230,6 +232,18 @@
         <div id="paypal-button-container-2"></div>
     </div>
 
+    <!-- Product 3: Hettegenser (New) -->
+    <div class="product-card">
+        <img src="https://via.placeholder.com/400x400" alt="Product 4" />
+        <h3>Hettegenser</h3>
+        <p>En komfortabel hettegenser med moderne design.</p>
+        <div class="price">349 NOK</div>
+
+        <!-- PayPal button -->
+        <div id="paypal-button-container-4"></div>
+    </div>
+
+    <!-- Product 4: Graphic T-Shirt -->
     <div class="product-card">
         <img src="https://via.placeholder.com/400x400" alt="Product 3" />
         <h3>Graphic T-Shirt</h3>
@@ -266,17 +280,4 @@
             onError: function(err) {
                 alert('Something went wrong. Please try again later.');
             }
-        }).render('#paypal-button-container-' + productId);  // Button placement
-    }
-
-    // Run the function when the document is loaded
-    document.addEventListener('DOMContentLoaded', function() {
-        renderPaypalButton(1, '199.00');
-        renderPaypalButton(2, '399.00');
-        renderPaypalButton(3, '249.00');
-    });
-</script>
-
-</body>
-
-</html>
+        }).render('#paypal-button

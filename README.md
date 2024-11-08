@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -54,7 +55,7 @@
             border-radius: 5px;
         }
 
-        /* About Us Section */
+        /* Introduction and about us */
         .about-section {
             display: flex;
             justify-content: space-around;
@@ -76,52 +77,33 @@
             line-height: 1.6;
         }
 
-        /* Why Us Section */
+        /* Why Us section */
         .why-us {
             background-color: #fff;
             padding: 50px 20px;
             text-align: center;
-            max-width: 1200px;
-            margin: 0 auto;
         }
 
         .why-us h2 {
             font-size: 2.5em;
             color: #333;
-            margin-bottom: 20px;
         }
 
         .why-us p {
             font-size: 1.2em;
             line-height: 1.8;
-            color: #555;
-            margin-bottom: 30px;
+            margin: 20px 0;
         }
 
-        /* Why Choose Us List */
-        .why-us-list {
+        .why-us ul {
             list-style-type: none;
             padding: 0;
-            margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 40px;  /* Gap between items */
         }
 
-        .why-us-list li {
-            font-size: 1.3em;
+        .why-us ul li {
+            margin-bottom: 15px;
+            font-size: 1.2em;
             color: #444;
-            max-width: 250px; /* Control max size for list items */
-            text-align: center;
-            line-height: 1.6;
-        }
-
-        .why-us-list li i {
-            font-size: 2em;
-            color: #4CAF50;  /* Green icons */
-            margin-bottom: 10px;
-            display: block;
         }
 
         /* Products */
@@ -177,7 +159,7 @@
             background-color: #45a049;
         }
 
-        /* Footer */
+        /* Footer Styles */
         footer {
             background-color: #333;
             color: white;
@@ -190,6 +172,7 @@
             justify-content: center; /* Sentraliserer innholdet horisontalt */
             align-items: center; /* Sentraliserer innholdet vertikalt */
             gap: 10px; /* Legger til mellomrom mellom teksten og Discord-knappen */
+            box-sizing: border-box; /* Sørger for at padding og margin ikke påvirker totalbredde */
         }
 
         footer p {
@@ -216,6 +199,9 @@
             margin-right: 10px;
         }
     </style>
+
+    <!-- PayPal SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AX9h_vpCyfAeEmRzIVGea-SJmmtvepfZgJgaN9iJGYZ7Yeg6mBSV1CeP-tYDXKkEiFObaLT5lOLuHL_W&components=buttons"></script>
 
 </head>
 
@@ -246,12 +232,20 @@
 <section id="why-us" class="why-us">
     <h2>Why Choose Us?</h2>
     <p>We offer more than just clothes – we offer a way to express yourself. Here are some reasons why you should shop with us:</p>
-    <ul class="why-us-list">
-        <li><i class="fas fa-lightbulb"></i> Unique and creative designs that no one else has.</li>
-        <li><i class="fas fa-globe"></i> Sustainable production with eco-friendly materials.</li>
-        <li><i class="fas fa-truck"></i> Fast shipping and easy returns.</li>
-        <li><i class="fas fa-palette"></i> New designs are added regularly – always something new to discover!</li>
-    </ul>
+    <div class="content">
+        <div class="left">
+            <ul>
+                <li><i class="fas fa-lightbulb"></i> Unique and creative designs that no one else has.</li>
+                <li><i class="fas fa-globe"></i> Sustainable production with eco-friendly materials.</li>
+            </ul>
+        </div>
+        <div class="right">
+            <ul>
+                <li><i class="fas fa-truck"></i> Fast shipping and easy returns.</li>
+                <li><i class="fas fa-palette"></i> New designs are added regularly – always something new to discover!</li>
+            </ul>
+        </div>
+    </div>
 </section>
 
 <section id="products" class="product-gallery">
@@ -288,7 +282,7 @@
     <div class="product-card">
         <img src="https://via.placeholder.com/400x400" alt="Product 4" />
         <h3>Hoodie</h3>
-        <p>Cozy hoodie with a cool graphic design.</p>
+        <p>A cozy hoodie with a creative design.</p>
         <div class="price">399 NOK</div>
 
         <!-- PayPal button -->

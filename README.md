@@ -221,13 +221,14 @@
             text-align: center;
             padding: 20px;
             width: 100%;
-            position: relative;  /* Endret fra 'fixed' til 'relative' */
+            position: relative;
             bottom: 0;
             display: flex;
+            flex-direction: column;  /* Legger til vertikal oppstilling */
             justify-content: center; /* Sentraliserer innholdet horisontalt */
             align-items: center; /* Sentraliserer innholdet vertikalt */
             box-sizing: border-box; /* Sørger for at padding ikke påvirker totalbredde */
-            margin-top: 40px; /* Legger til litt mellomrom mellom footer og siste innhold */
+            margin-top: 40px;
         }
 
         footer p {
@@ -253,8 +254,8 @@
         .discord-button i {
             margin-right: 10px;
         }
-    </style>
 
+    </style>
 </head>
 
 <body>
@@ -268,7 +269,7 @@
     <a href="#">Home</a>
     <a href="#about">About Us</a>
     <a href="#why-us">Why Choose Us?</a>
-    <a href="#products">Products</a> <!-- New Products Link -->
+    <a href="#products">Products</a>
 </nav>
 
 <section id="about" class="about-section">
@@ -350,9 +351,12 @@
 </section>
 
 <footer>
-    <p>&copy; 2024 Merch Store | <a href="https://discord.com" class="discord-button"><i class="fab fa-discord"></i> Join Our Discord</a></p>
+    <p>&copy; 2024 Merch Store</p>
+    <a href="https://discord.com" class="discord-button"><i class="fab fa-discord"></i> Join Our Discord</a>
 </footer>
 
 </body>
+
 </html>
+
 

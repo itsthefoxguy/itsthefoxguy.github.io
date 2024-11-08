@@ -136,68 +136,42 @@
             line-height: 1.5;
         }
 
-        /* New Products Section */
+        /* Products */
         .product-gallery {
-            background-color: #f4f4f4;
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        .product-gallery h2 {
-            font-size: 2.5em;
-            color: #333;
-            margin-bottom: 20px;
-        }
-
-        .product-gallery p {
-            font-size: 1.2em;
-            color: #777;
-            margin-bottom: 40px;
-        }
-
-        .product-gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsiv grid */
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 40px 20px;
         }
 
         .product-card {
             background-color: #fff;
-            padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
             text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .product-card:hover {
-            transform: translateY(-5px); /* Liten heving ved hover */
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Større skygge på hover */
         }
 
         .product-card img {
             width: 100%;
             height: auto;
-            border-radius: 8px;
         }
 
         .product-card h3 {
             font-size: 1.8em;
             color: #333;
-            margin-top: 20px;
+            margin: 20px 0 10px;
         }
 
         .product-card p {
             font-size: 1.1em;
             color: #777;
-            margin-bottom: 15px;
         }
 
         .product-card .price {
-            font-size: 1.4em;
+            font-size: 1.5em;
             color: #4CAF50;
             font-weight: bold;
-            margin-bottom: 20px;
         }
 
         .product-card .button {
@@ -205,9 +179,10 @@
             color: white;
             text-decoration: none;
             padding: 15px;
+            display: inline-block;
+            margin: 20px 0;
             border-radius: 5px;
             font-weight: 600;
-            transition: background-color 0.3s;
         }
 
         .product-card .button:hover {
@@ -220,14 +195,13 @@
             color: white;
             text-align: center;
             padding: 15px 20px;
-            position: fixed;
             width: 100%;
-            bottom: 0;
             display: flex;
             justify-content: center; /* Sentraliserer innholdet horisontalt */
             align-items: center; /* Sentraliserer innholdet vertikalt */
             gap: 10px; /* Legger til mellomrom mellom teksten og Discord-knappen */
             box-sizing: border-box; /* Sørger for at padding og margin ikke påvirker totalbredde */
+            position: relative; /* Endret fra fixed til relative */
         }
 
         footer p {
@@ -271,7 +245,7 @@
     <a href="#">Home</a>
     <a href="#about">About Us</a>
     <a href="#why-us">Why Choose Us?</a>
-    <a href="#products">Products</a> <!-- New Products Link -->
+    <a href="#products">Products</a>
 </nav>
 
 <section id="about" class="about-section">
@@ -280,124 +254,126 @@
         <p>Merch Store was founded with one mission: to offer creative and unique designs on t-shirts and sweatshirts for anyone who loves to express themselves through style. We work with talented designers to create products that stand out while using eco-friendly materials and sustainable production methods.</p>
     </div>
     <div>
-        <img src="https://via.placeholder.com/400x400" alt="Merch Store Image">
+        <img src="https://via.placeholder.com/500" alt="T-shirt Design" />
     </div>
 </section>
 
 <section id="why-us" class="why-us">
     <h2>Why Choose Us?</h2>
-    <p>We believe that everyone deserves clothing that fits their personality and passion. Here’s why you should choose us for your next purchase:</p>
+    <p>We offer more than just clothes – we offer a way to express yourself. Here are some reasons why you should shop with us:</p>
     <div class="why-us-content">
         <div class="why-us-item">
-            <i class="fas fa-tshirt"></i>
+            <i class="fas fa-lightbulb"></i>
             <h3>Unique Designs</h3>
-            <p>Our designs are exclusive and created by talented artists.</p>
+            <p>Our t-shirts and sweatshirts feature creative and original designs that you won’t find anywhere else.</p>
         </div>
         <div class="why-us-item">
-            <i class="fas fa-leaf"></i>
-            <h3>Eco-Friendly Materials</h3>
-            <p>We use organic and sustainable materials in all our products.</p>
+            <i class="fas fa-globe"></i>
+            <h3>Sustainable Materials</h3>
+            <p>We use eco-friendly materials and sustainable production practices to reduce our environmental impact.</p>
         </div>
         <div class="why-us-item">
             <i class="fas fa-truck"></i>
-            <h3>Fast Delivery</h3>
-            <p>Get your order quickly, no matter where you are in the world!</p>
+            <h3>Fast Shipping</h3>
+            <p>We offer fast and reliable shipping so you can enjoy your products as quickly as possible.</p>
+        </div>
+        <div class="why-us-item">
+            <i class="fas fa-palette"></i>
+            <h3>New Designs Regularly</h3>
+            <p>Our designs are always evolving, so you can discover fresh and exciting styles every time you visit.</p>
+        </div>
+        <div class="why-us-item">
+            <i class="fas fa-heart"></i>
+            <h3>Customer Satisfaction</h3>
+            <p>Your satisfaction is our top priority. We are committed to providing great customer service and high-quality products.</p>
+        </div>
+        <div class="why-us-item">
+            <i class="fas fa-hand-holding-usd"></i>
+            <h3>Affordable Prices</h3>
+            <p>We offer stylish clothing at affordable prices, so you can look great without breaking the bank.</p>
         </div>
     </div>
 </section>
 
 <section id="products" class="product-gallery">
-    <h2>Our Newest Products</h2>
-    <p>Check out our latest collection of t-shirts and sweatshirts.</p>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/400x400" alt="Product 1" />
+        <h3>Basic T-Shirt</h3>
+        <p>A classic t-shirt with a minimalist design.</p>
+        <div class="price">199 NOK</div>
 
-    <div class="product-gallery-grid">
-        <div class="product-card">
-            <img src="https://via.placeholder.com/400x400" alt="Basic T-Shirt">
-            <h3>Basic T-Shirt</h3>
-            <p>A classic t-shirt with a minimalist design.</p>
-            <div class="price">199 NOK</div>
-            <!-- PayPal Button for Basic T-Shirt -->
-            <div id="paypal-button-container-basic-tshirt"></div>
-            <script>
-                paypal.Buttons({
-                    createOrder: function(data, actions) {
-                        return actions.order.create({
-                            purchase_units: [{
-                                amount: {
-                                    value: '199.00'  // Produktprisen
-                                }
-                            }]
-                        });
-                    },
-                    onApprove: function(data, actions) {
-                        return actions.order.capture().then(function(details) {
-                            alert('Takk for at du handlet hos oss, ' + details.payer.name.given_name);
-                        });
-                    }
-                }).render('#paypal-button-container-basic-tshirt');
-            </script>
-        </div>
+        <!-- PayPal button -->
+        <div id="paypal-button-container-1"></div>
+    </div>
 
-        <div class="product-card">
-            <img src="https://via.placeholder.com/400x400" alt="Vintage Sweater">
-            <h3>Vintage Sweater</h3>
-            <p>A stylish sweater with a retro design.</p>
-            <div class="price">399 NOK</div>
-            <!-- PayPal Button for Vintage Sweater -->
-            <div id="paypal-button-container-vintage-sweater"></div>
-            <script>
-                paypal.Buttons({
-                    createOrder: function(data, actions) {
-                        return actions.order.create({
-                            purchase_units: [{
-                                amount: {
-                                    value: '399.00'  // Produktprisen
-                                }
-                            }]
-                        });
-                    },
-                    onApprove: function(data, actions) {
-                        return actions.order.capture().then(function(details) {
-                            alert('Takk for at du handlet hos oss, ' + details.payer.name.given_name);
-                        });
-                    }
-                }).render('#paypal-button-container-vintage-sweater');
-            </script>
-        </div>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/400x400" alt="Product 2" />
+        <h3>Vintage Sweater</h3>
+        <p>A stylish sweater with a retro design.</p>
+        <div class="price">399 NOK</div>
 
-        <div class="product-card">
-            <img src="https://via.placeholder.com/400x400" alt="Graphic T-Shirt">
-            <h3>Graphic T-Shirt</h3>
-            <p>A striking t-shirt with a graphic print.</p>
-            <div class="price">249 NOK</div>
-            <!-- PayPal Button for Graphic T-Shirt -->
-            <div id="paypal-button-container-graphic-tshirt"></div>
-            <script>
-                paypal.Buttons({
-                    createOrder: function(data, actions) {
-                        return actions.order.create({
-                            purchase_units: [{
-                                amount: {
-                                    value: '249.00'  // Produktprisen
-                                }
-                            }]
-                        });
-                    },
-                    onApprove: function(data, actions) {
-                        return actions.order.capture().then(function(details) {
-                            alert('Takk for at du handlet hos oss, ' + details.payer.name.given_name);
-                        });
-                    }
-                }).render('#paypal-button-container-graphic-tshirt');
-            </script>
-        </div>
+        <!-- PayPal button -->
+        <div id="paypal-button-container-2"></div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://via.placeholder.com/400x400" alt="Product 3" />
+        <h3>Graphic T-Shirt</h3>
+        <p>A striking t-shirt with a graphic print.</p>
+        <div class="price">249 NOK</div>
+
+        <!-- PayPal button -->
+        <div id="paypal-button-container-3"></div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://via.placeholder.com/400x400" alt="Product 4" />
+        <h3>Hoodie</h3>
+        <p>A cozy hoodie with a creative design.</p>
+        <div class="price">399 NOK</div>
+
+        <!-- PayPal button -->
+        <div id="paypal-button-container-4"></div>
     </div>
 </section>
 
 <footer>
-    <p>&copy; 2024 Merch Store. All rights reserved.</p>
-    <a href="https://discord.com" target="_blank" class="discord-button"><i class="fab fa-discord"></i> Join our Discord</a>
+    <p>&copy; 2024 Merch Store | All rights reserved</p>
+    <a href="https://discord.gg/N8hgGWer2c" class="discord-button"><i class="fab fa-discord"></i> Join Our Discord</a>
 </footer>
+
+<script>
+    // Function to render PayPal buttons
+    function renderPaypalButton(productId, price) {
+        paypal.Buttons({
+            createOrder: function(data, actions) {
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: price
+                        }
+                    }]
+                });
+            },
+            onApprove: function(data, actions) {
+                return actions.order.capture().then(function(details) {
+                    alert('Payment was successful, ' + details.payer.name.given_name);
+                });
+            },
+            onError: function(err) {
+                alert('Something went wrong. Please try again later.');
+            }
+        }).render('#paypal-button-container-' + productId);  // Button placement
+    }
+
+    // Run the function when the document is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+        renderPaypalButton(1, '199.00');
+        renderPaypalButton(2, '399.00');
+        renderPaypalButton(3, '249.00');
+        renderPaypalButton(4, '399.00');
+    });
+</script>
 
 </body>
 </html>

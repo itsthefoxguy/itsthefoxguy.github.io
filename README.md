@@ -81,7 +81,7 @@
 
         /* Why Us section */
         .why-us {
-            background-color: #f4f4f4;  /* Lys bakgrunn for kontrast */
+            background-color: #fff;
             padding: 50px 20px;
             text-align: center;
         }
@@ -89,51 +89,28 @@
         .why-us h2 {
             font-size: 2.5em;
             color: #333;
-            margin-bottom: 20px;
         }
 
         .why-us p {
             font-size: 1.2em;
             line-height: 1.8;
-            margin-bottom: 40px;
-            color: #555;
+            margin: 20px 0;
         }
 
-        .why-us-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsiv grid */
-            gap: 30px;  /* Avstand mellom elementene */
+        .why-us ul {
+            list-style-type: none;
+            padding: 0;
         }
 
-        .why-us-item {
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .why-us-item:hover {
-            transform: translateY(-10px); /* Liten heving ved hover */
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Større skygge på hover */
-        }
-
-        .why-us-item i {
-            font-size: 3em;
-            color: #4CAF50;
+        .why-us ul li {
             margin-bottom: 15px;
+            font-size: 1.2em;
+            color: #444;
         }
 
-        .why-us-item h3 {
-            font-size: 1.8em;
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .why-us-item p {
-            font-size: 1.1em;
-            color: #777;
-            line-height: 1.5;
+        .why-us ul li i {
+            color: #4CAF50;
+            margin-right: 10px;
         }
 
         /* Products */
@@ -190,43 +167,44 @@
         }
 
         /* Footer Styles */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 15px 20px;
-    position: relative;
-    width: 100%;
-    box-sizing: border-box; /* Sørger for at padding ikke forårsaker at footer blir bredere enn skjermen */
-    display: flex;
-    justify-content: center; /* Sentraliserer innholdet horisontalt */
-    align-items: center; /* Sentraliserer innholdet vertikalt */
-    gap: 10px; /* Legger til mellomrom mellom teksten og Discord-knappen */
-}
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 20px;
+            position: relative;
+            width: 100%;
+            box-sizing: border-box; /* Sørger for at padding ikke forårsaker at footer blir bredere enn skjermen */
+            display: flex;
+            justify-content: center; /* Sentraliserer innholdet horisontalt */
+            align-items: center; /* Sentraliserer innholdet vertikalt */
+            gap: 10px; /* Legger til mellomrom mellom teksten og Discord-knappen */
+        }
 
-footer p {
-    margin: 0;
-    font-size: 1em;
-}
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
 
-.discord-button {
-    background-color: #7289da;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1.2em;
-    display: inline-block;
-    margin-top: 10px;
-}
+        .discord-button {
+            background-color: #7289da;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+            display: inline-block;
+            margin-top: 10px;
+        }
 
-.discord-button:hover {
-    background-color: #5b6eae;
-}
+        .discord-button:hover {
+            background-color: #5b6eae;
+        }
 
-.discord-button i {
-    margin-right: 10px;
-}
+        .discord-button i {
+            margin-right: 10px;
+        }
+    </style>
 
     <!-- PayPal SDK -->
     <script src="https://www.paypal.com/sdk/js?client-id=AX9h_vpCyfAeEmRzIVGea-SJmmtvepfZgJgaN9iJGYZ7Yeg6mBSV1CeP-tYDXKkEiFObaLT5lOLuHL_W&components=buttons"></script>
@@ -260,36 +238,18 @@ footer p {
 <section id="why-us" class="why-us">
     <h2>Why Choose Us?</h2>
     <p>We offer more than just clothes – we offer a way to express yourself. Here are some reasons why you should shop with us:</p>
-    <div class="why-us-content">
-        <div class="why-us-item">
-            <i class="fas fa-lightbulb"></i>
-            <h3>Unique Designs</h3>
-            <p>Our t-shirts and sweatshirts feature creative and original designs that you won’t find anywhere else.</p>
+    <div class="content">
+        <div class="left">
+            <ul>
+                <li><i class="fas fa-lightbulb"></i> Unique and creative designs that no one else has.</li>
+                <li><i class="fas fa-globe"></i> Sustainable production with eco-friendly materials.</li>
+            </ul>
         </div>
-        <div class="why-us-item">
-            <i class="fas fa-globe"></i>
-            <h3>Sustainable Materials</h3>
-            <p>We use eco-friendly materials and sustainable production practices to reduce our environmental impact.</p>
-        </div>
-        <div class="why-us-item">
-            <i class="fas fa-truck"></i>
-            <h3>Fast Shipping</h3>
-            <p>We offer fast and reliable shipping so you can enjoy your products as quickly as possible.</p>
-        </div>
-        <div class="why-us-item">
-            <i class="fas fa-palette"></i>
-            <h3>New Designs Regularly</h3>
-            <p>Our designs are always evolving, so you can discover fresh and exciting styles every time you visit.</p>
-        </div>
-        <div class="why-us-item">
-            <i class="fas fa-heart"></i>
-            <h3>Customer Satisfaction</h3>
-            <p>Your satisfaction is our top priority. We are committed to providing great customer service and high-quality products.</p>
-        </div>
-        <div class="why-us-item">
-            <i class="fas fa-hand-holding-usd"></i>
-            <h3>Affordable Prices</h3>
-            <p>We offer stylish clothing at affordable prices, so you can look great without breaking the bank.</p>
+        <div class="right">
+            <ul>
+                <li><i class="fas fa-truck"></i> Fast shipping and easy returns.</li>
+                <li><i class="fas fa-palette"></i> New designs are added regularly – always something new to discover!</li>
+            </ul>
         </div>
     </div>
 </section>

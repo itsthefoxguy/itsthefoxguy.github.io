@@ -136,42 +136,68 @@
             line-height: 1.5;
         }
 
-        /* Products */
+        /* New Products Section */
         .product-gallery {
+            background-color: #f4f4f4;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .product-gallery h2 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .product-gallery p {
+            font-size: 1.2em;
+            color: #777;
+            margin-bottom: 40px;
+        }
+
+        .product-gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            padding: 40px 20px;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsiv grid */
+            gap: 20px;
         }
 
         .product-card {
             background-color: #fff;
+            padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
             text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px); /* Liten heving ved hover */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Større skygge på hover */
         }
 
         .product-card img {
             width: 100%;
             height: auto;
+            border-radius: 8px;
         }
 
         .product-card h3 {
             font-size: 1.8em;
             color: #333;
-            margin: 20px 0 10px;
+            margin-top: 20px;
         }
 
         .product-card p {
             font-size: 1.1em;
             color: #777;
+            margin-bottom: 15px;
         }
 
         .product-card .price {
-            font-size: 1.5em;
+            font-size: 1.4em;
             color: #4CAF50;
             font-weight: bold;
+            margin-bottom: 20px;
         }
 
         .product-card .button {
@@ -179,10 +205,9 @@
             color: white;
             text-decoration: none;
             padding: 15px;
-            display: inline-block;
-            margin: 20px 0;
             border-radius: 5px;
             font-weight: 600;
+            transition: background-color 0.3s;
         }
 
         .product-card .button:hover {
@@ -195,13 +220,14 @@
             color: white;
             text-align: center;
             padding: 15px 20px;
+            position: fixed;
             width: 100%;
+            bottom: 0;
             display: flex;
             justify-content: center; /* Sentraliserer innholdet horisontalt */
             align-items: center; /* Sentraliserer innholdet vertikalt */
             gap: 10px; /* Legger til mellomrom mellom teksten og Discord-knappen */
             box-sizing: border-box; /* Sørger for at padding og margin ikke påvirker totalbredde */
-            position: relative; /* Endret fra fixed til relative */
         }
 
         footer p {
@@ -245,7 +271,7 @@
     <a href="#">Home</a>
     <a href="#about">About Us</a>
     <a href="#why-us">Why Choose Us?</a>
-    <a href="#products">Products</a>
+    <a href="#products">Products</a> <!-- New Products Link -->
 </nav>
 
 <section id="about" class="about-section">
@@ -295,85 +321,48 @@
     </div>
 </section>
 
+<!-- New Products Section -->
 <section id="products" class="product-gallery">
-    <div class="product-card">
-        <img src="https://via.placeholder.com/400x400" alt="Product 1" />
-        <h3>Basic T-Shirt</h3>
-        <p>A classic t-shirt with a minimalist design.</p>
-        <div class="price">199 NOK</div>
+    <h2>Our Products</h2>
+    <p>Discover our unique collection of t-shirts and sweatshirts, each designed to help you express yourself.</p>
+    <div class="product-gallery-grid">
+        <div class="product-card">
+            <img src="https://via.placeholder.com/400x400" alt="Basic T-Shirt">
+            <h3>Basic T-Shirt</h3>
+            <p>A classic t-shirt with a minimalist design.</p>
+            <div class="price">199 NOK</div>
+            <a href="#" class="button">Buy Now</a>
+        </div>
 
-        <!-- PayPal button -->
-        <div id="paypal-button-container-1"></div>
-    </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/400x400" alt="Vintage Sweater">
+            <h3>Vintage Sweater</h3>
+            <p>A stylish sweater with a retro design.</p>
+            <div class="price">399 NOK</div>
+            <a href="#" class="button">Buy Now</a>
+        </div>
 
-    <div class="product-card">
-        <img src="https://via.placeholder.com/400x400" alt="Product 2" />
-        <h3>Vintage Sweater</h3>
-        <p>A stylish sweater with a retro design.</p>
-        <div class="price">399 NOK</div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/400x400" alt="Graphic T-Shirt">
+            <h3>Graphic T-Shirt</h3>
+            <p>A striking t-shirt with a graphic print.</p>
+            <div class="price">249 NOK</div>
+            <a href="#" class="button">Buy Now</a>
+        </div>
 
-        <!-- PayPal button -->
-        <div id="paypal-button-container-2"></div>
-    </div>
-
-    <div class="product-card">
-        <img src="https://via.placeholder.com/400x400" alt="Product 3" />
-        <h3>Graphic T-Shirt</h3>
-        <p>A striking t-shirt with a graphic print.</p>
-        <div class="price">249 NOK</div>
-
-        <!-- PayPal button -->
-        <div id="paypal-button-container-3"></div>
-    </div>
-
-    <div class="product-card">
-        <img src="https://via.placeholder.com/400x400" alt="Product 4" />
-        <h3>Hoodie</h3>
-        <p>A cozy hoodie with a creative design.</p>
-        <div class="price">399 NOK</div>
-
-        <!-- PayPal button -->
-        <div id="paypal-button-container-4"></div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/400x400" alt="Hoodie">
+            <h3>Hoodie</h3>
+            <p>A cozy hoodie with a creative design.</p>
+            <div class="price">399 NOK</div>
+            <a href="#" class="button">Buy Now</a>
+        </div>
     </div>
 </section>
 
 <footer>
-    <p>&copy; 2024 Merch Store | All rights reserved</p>
-    <a href="https://discord.gg/N8hgGWer2c" class="discord-button"><i class="fab fa-discord"></i> Join Our Discord</a>
+    <p>&copy; 2024 Merch Store | <a href="https://discord.com" class="discord-button"><i class="fab fa-discord"></i> Join Our Discord</a></p>
 </footer>
-
-<script>
-    // Function to render PayPal buttons
-    function renderPaypalButton(productId, price) {
-        paypal.Buttons({
-            createOrder: function(data, actions) {
-                return actions.order.create({
-                    purchase_units: [{
-                        amount: {
-                            value: price
-                        }
-                    }]
-                });
-            },
-            onApprove: function(data, actions) {
-                return actions.order.capture().then(function(details) {
-                    alert('Payment was successful, ' + details.payer.name.given_name);
-                });
-            },
-            onError: function(err) {
-                alert('Something went wrong. Please try again later.');
-            }
-        }).render('#paypal-button-container-' + productId);  // Button placement
-    }
-
-    // Run the function when the document is loaded
-    document.addEventListener('DOMContentLoaded', function() {
-        renderPaypalButton(1, '199.00');
-        renderPaypalButton(2, '399.00');
-        renderPaypalButton(3, '249.00');
-        renderPaypalButton(4, '399.00');
-    });
-</script>
 
 </body>
 </html>

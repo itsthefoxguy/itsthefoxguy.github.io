@@ -81,7 +81,7 @@
 
         /* Why Us section */
         .why-us {
-            background-color: #f4f4f4;
+            background-color: #f4f4f4;  /* Lys bakgrunn for kontrast */
             padding: 50px 20px;
             text-align: center;
         }
@@ -101,8 +101,8 @@
 
         .why-us-content {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-            gap: 30px;  
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsiv grid */
+            gap: 30px;  /* Avstand mellom elementene */
         }
 
         .why-us-item {
@@ -114,8 +114,8 @@
         }
 
         .why-us-item:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            transform: translateY(-10px); /* Liten heving ved hover */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Større skygge på hover */
         }
 
         .why-us-item i {
@@ -197,10 +197,11 @@
             padding: 15px 20px;
             width: 100%;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            box-sizing: border-box;
+            justify-content: center; /* Sentraliserer innholdet horisontalt */
+            align-items: center; /* Sentraliserer innholdet vertikalt */
+            gap: 10px; /* Legger til mellomrom mellom teksten og Discord-knappen */
+            box-sizing: border-box; /* Sørger for at padding og margin ikke påvirker totalbredde */
+            position: relative; /* Endret fra fixed til relative */
         }
 
         footer p {
@@ -225,43 +226,6 @@
 
         .discord-button i {
             margin-right: 10px;
-        }
-
-        /* Social Media Buttons */
-        .social-button {
-            background-color: #3b5998; 
-            padding: 10px;
-            border-radius: 5px;
-            color: white;
-            font-size: 1.2em;
-            margin: 0 5px;
-        }
-
-        .social-button:hover {
-            background-color: #2d4373;
-        }
-
-        .social-button.twitter {
-            background-color: #1da1f2;
-        }
-
-        .social-button.twitter:hover {
-            background-color: #1991db;
-        }
-
-        /* Media Queries for Mobile */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.5em;
-            }
-
-            .product-gallery {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .why-us-content {
-                grid-template-columns: 1fr;
-            }
         }
     </style>
 
@@ -290,80 +254,125 @@
         <p>Merch Store was founded with one mission: to offer creative and unique designs on t-shirts and sweatshirts for anyone who loves to express themselves through style. We work with talented designers to create products that stand out while using eco-friendly materials and sustainable production methods.</p>
     </div>
     <div>
-        <img src="https://via.placeholder.com/500" alt="Eco-friendly t-shirt design with minimalist artwork" />
+        <img src="https://via.placeholder.com/500" alt="T-shirt Design" />
     </div>
 </section>
 
 <section id="why-us" class="why-us">
     <h2>Why Choose Us?</h2>
-    <p>We believe in offering only the best designs, quality, and customer service. Here's why we stand out:</p>
+    <p>We offer more than just clothes – we offer a way to express yourself. Here are some reasons why you should shop with us:</p>
     <div class="why-us-content">
         <div class="why-us-item">
-            <i class="fas fa-lightbulb" aria-hidden="true"></i>
+            <i class="fas fa-lightbulb"></i>
             <h3>Unique Designs</h3>
-            <p>Our designers craft one-of-a-kind artwork for each product, ensuring you wear something that speaks to your individuality.</p>
+            <p>Our t-shirts and sweatshirts feature creative and original designs that you won’t find anywhere else.</p>
         </div>
         <div class="why-us-item">
-            <i class="fas fa-recycle" aria-hidden="true"></i>
-            <h3>Eco-Friendly Materials</h3>
-            <p>We use only the best sustainable fabrics and processes to create our clothing, helping you make a positive impact.</p>
+            <i class="fas fa-globe"></i>
+            <h3>Sustainable Materials</h3>
+            <p>We use eco-friendly materials and sustainable production practices to reduce our environmental impact.</p>
         </div>
         <div class="why-us-item">
-            <i class="fas fa-cogs" aria-hidden="true"></i>
-            <h3>Quality Craftsmanship</h3>
-            <p>Our t-shirts and sweatshirts are made with the highest quality materials and crafted to last.</p>
+            <i class="fas fa-truck"></i>
+            <h3>Fast Shipping</h3>
+            <p>We offer fast and reliable shipping so you can enjoy your products as quickly as possible.</p>
+        </div>
+        <div class="why-us-item">
+            <i class="fas fa-palette"></i>
+            <h3>New Designs Regularly</h3>
+            <p>Our designs are always evolving, so you can discover fresh and exciting styles every time you visit.</p>
+        </div>
+        <div class="why-us-item">
+            <i class="fas fa-heart"></i>
+            <h3>Customer Satisfaction</h3>
+            <p>Your satisfaction is our top priority. We are committed to providing great customer service and high-quality products.</p>
+        </div>
+        <div class="why-us-item">
+            <i class="fas fa-hand-holding-usd"></i>
+            <h3>Affordable Prices</h3>
+            <p>We offer stylish clothing at affordable prices, so you can look great without breaking the bank.</p>
         </div>
     </div>
 </section>
 
-<section id="products">
-    <div class="product-gallery">
-        <div class="product-card">
-            <img src="https://via.placeholder.com/500" alt="Eco-friendly t-shirt design with minimalist artwork" />
-            <h3>Minimalist T-Shirt</h3>
-            <p>A sleek and stylish t-shirt with a minimalist design that will match any outfit.</p>
-            <p class="price">$25.00</p>
-            <div id="paypal-button-container"></div>
-        </div>
-        <div class="product-card">
-            <img src="https://via.placeholder.com/500" alt="Comfortable sweatshirt with bold graphic" />
-            <h3>Bold Graphic Sweatshirt</h3>
-            <p>A comfortable sweatshirt featuring a bold graphic design that makes a statement.</p>
-            <p class="price">$35.00</p>
-            <div id="paypal-button-container"></div>
-        </div>
+<section id="products" class="product-gallery">
+    <div class="product-card">
+        <img src="https://via.placeholder.com/400x400" alt="Product 1" />
+        <h3>Basic T-Shirt</h3>
+        <p>A classic t-shirt with a minimalist design.</p>
+        <div class="price">199 NOK</div>
+
+        <!-- PayPal button -->
+        <div id="paypal-button-container-1"></div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://via.placeholder.com/400x400" alt="Product 2" />
+        <h3>Vintage Sweater</h3>
+        <p>A stylish sweater with a retro design.</p>
+        <div class="price">399 NOK</div>
+
+        <!-- PayPal button -->
+        <div id="paypal-button-container-2"></div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://via.placeholder.com/400x400" alt="Product 3" />
+        <h3>Graphic T-Shirt</h3>
+        <p>A striking t-shirt with a graphic print.</p>
+        <div class="price">249 NOK</div>
+
+        <!-- PayPal button -->
+        <div id="paypal-button-container-3"></div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://via.placeholder.com/400x400" alt="Product 4" />
+        <h3>Hoodie</h3>
+        <p>A cozy hoodie with a creative design.</p>
+        <div class="price">399 NOK</div>
+
+        <!-- PayPal button -->
+        <div id="paypal-button-container-4"></div>
     </div>
 </section>
 
 <footer>
     <p>&copy; 2024 Merch Store | All rights reserved</p>
     <a href="https://discord.gg/N8hgGWer2c" class="discord-button"><i class="fab fa-discord"></i> Join Our Discord</a>
-    <a href="https://facebook.com" class="social-button"><i class="fab fa-facebook"></i></a>
-    <a href="https://twitter.com" class="social-button twitter"><i class="fab fa-twitter"></i></a>
 </footer>
 
 <script>
-    // PayPal Button Setup
-    paypal.Buttons({
-        createOrder: function(data, actions) {
-            return actions.order.create({
-                purchase_units: [{
-                    amount: {
-                        value: '25.00'
-                    }
-                }]
-            });
-        },
-        onApprove: function(data, actions) {
-            return actions.order.capture().then(function(details) {
-                alert('Payment was successful! Thank you for your purchase, ' + details.payer.name.given_name);
-                window.location.href = "/thank-you"; // Redirect to a thank you page after successful payment.
-            });
-        },
-        onError: function(err) {
-            alert('An error occurred during the payment process. Please try again or contact support if the problem persists.');
-        }
-    }).render('#paypal-button-container');
+    // Function to render PayPal buttons
+    function renderPaypalButton(productId, price) {
+        paypal.Buttons({
+            createOrder: function(data, actions) {
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: price
+                        }
+                    }]
+                });
+            },
+            onApprove: function(data, actions) {
+                return actions.order.capture().then(function(details) {
+                    alert('Payment was successful, ' + details.payer.name.given_name);
+                });
+            },
+            onError: function(err) {
+                alert('Something went wrong. Please try again later.');
+            }
+        }).render('#paypal-button-container-' + productId);  // Button placement
+    }
+
+    // Run the function when the document is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+        renderPaypalButton(1, '199.00');
+        renderPaypalButton(2, '399.00');
+        renderPaypalButton(3, '249.00');
+        renderPaypalButton(4, '399.00');
+    });
 </script>
 
 </body>

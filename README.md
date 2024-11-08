@@ -186,9 +186,17 @@
             position: fixed;
             width: 100%;
             bottom: 0;
+            display: flex;
+            justify-content: center; /* Sentraliserer innholdet horisontalt */
+            align-items: center; /* Sentraliserer innholdet vertikalt */
+            gap: 10px; /* Legger til mellomrom mellom teksten og Discord-knappen */
         }
 
-        /* Discord button */
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+
         .discord-button {
             background-color: #7289da;
             color: white;
@@ -280,7 +288,7 @@
     <div class="product-card">
         <img src="https://via.placeholder.com/400x400" alt="Product 4" />
         <h3>Hoodie</h3>
-        <p>A cozy hoodie for casual wear.</p>
+        <p>Cozy hoodie with a cool graphic design.</p>
         <div class="price">399 NOK</div>
 
         <!-- PayPal button -->

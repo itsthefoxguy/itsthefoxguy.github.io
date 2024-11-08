@@ -190,45 +190,43 @@
         }
 
         /* Footer Styles */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 15px 20px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-            display: flex;
-            justify-content: center; /* Sentraliserer innholdet horisontalt */
-            align-items: center; /* Sentraliserer innholdet vertikalt */
-            gap: 10px; /* Legger til mellomrom mellom teksten og Discord-knappen */
-            box-sizing: border-box; /* Sørger for at padding og margin ikke påvirker totalbredde */
-        }
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box; /* Sørger for at padding ikke forårsaker at footer blir bredere enn skjermen */
+    display: flex;
+    justify-content: center; /* Sentraliserer innholdet horisontalt */
+    align-items: center; /* Sentraliserer innholdet vertikalt */
+    gap: 10px; /* Legger til mellomrom mellom teksten og Discord-knappen */
+}
 
-        footer p {
-            margin: 0;
-            font-size: 1em;
-        }
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
 
-        .discord-button {
-            background-color: #7289da;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 1.2em;
-            display: inline-block;
-            margin-top: 10px;
-        }
+.discord-button {
+    background-color: #7289da;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: inline-block;
+    margin-top: 10px;
+}
 
-        .discord-button:hover {
-            background-color: #5b6eae;
-        }
+.discord-button:hover {
+    background-color: #5b6eae;
+}
 
-        .discord-button i {
-            margin-right: 10px;
-        }
-    </style>
+.discord-button i {
+    margin-right: 10px;
+}
 
     <!-- PayPal SDK -->
     <script src="https://www.paypal.com/sdk/js?client-id=AX9h_vpCyfAeEmRzIVGea-SJmmtvepfZgJgaN9iJGYZ7Yeg6mBSV1CeP-tYDXKkEiFObaLT5lOLuHL_W&components=buttons"></script>

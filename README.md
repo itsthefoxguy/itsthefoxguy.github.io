@@ -195,14 +195,13 @@
             color: white;
             text-align: center;
             padding: 15px 20px;
-            position: fixed;
             width: 100%;
-            bottom: 0;
             display: flex;
             justify-content: center; /* Sentraliserer innholdet horisontalt */
             align-items: center; /* Sentraliserer innholdet vertikalt */
             gap: 10px; /* Legger til mellomrom mellom teksten og Discord-knappen */
             box-sizing: border-box; /* Sørger for at padding og margin ikke påvirker totalbredde */
+            position: relative; /* Endret fra fixed til relative */
         }
 
         footer p {
@@ -377,5 +376,4 @@
 </script>
 
 </body>
-
 </html>

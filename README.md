@@ -219,15 +219,15 @@
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 15px 20px;
-            position: fixed;
+            padding: 20px;
             width: 100%;
+            position: relative;  /* Endret fra 'fixed' til 'relative' */
             bottom: 0;
             display: flex;
             justify-content: center; /* Sentraliserer innholdet horisontalt */
             align-items: center; /* Sentraliserer innholdet vertikalt */
-            gap: 10px; /* Legger til mellomrom mellom teksten og Discord-knappen */
-            box-sizing: border-box; /* Sørger for at padding og margin ikke påvirker totalbredde */
+            box-sizing: border-box; /* Sørger for at padding ikke påvirker totalbredde */
+            margin-top: 40px; /* Legger til litt mellomrom mellom footer og siste innhold */
         }
 
         footer p {
@@ -254,9 +254,6 @@
             margin-right: 10px;
         }
     </style>
-
-    <!-- PayPal SDK -->
-    <script src="https://www.paypal.com/sdk/js?client-id=AX9h_vpCyfAeEmRzIVGea-SJmmtvepfZgJgaN9iJGYZ7Yeg6mBSV1CeP-tYDXKkEiFObaLT5lOLuHL_W&components=buttons"></script>
 
 </head>
 
@@ -358,3 +355,4 @@
 
 </body>
 </html>
+

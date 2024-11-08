@@ -117,10 +117,34 @@
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 15px 20px;
-            position: fixed;
+            padding: 20px 0;
+            position: relative;
             width: 100%;
-            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1.1em;
+        }
+
+        .discord-button {
+            display: inline-block;
+            background-color: #7289da;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .discord-button i {
+            margin-right: 8px;
+        }
+
+        .discord-button:hover {
+            background-color: #5b6eae;
         }
     </style>
 </head>
@@ -194,7 +218,9 @@
 
 <footer>
     <p>&copy; 2024 Merch Store | All rights reserved</p>
-    <a href="https://discord.gg/N8hgGWer2c" class="discord-button"><i class="fab fa-discord"></i> Join Our Discord</a>
+    <a href="https://discord.gg/N8hgGWer2c" class="discord-button">
+        <i class="fab fa-discord"></i> Join Our Discord
+    </a>
 </footer>
 
 </body>

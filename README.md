@@ -283,6 +283,16 @@
             <h3>New Designs Regularly</h3>
             <p>Our designs are always evolving, so you can discover fresh and exciting styles every time you visit.</p>
         </div>
+        <div class="why-us-item">
+            <i class="fas fa-heart"></i>
+            <h3>Customer Satisfaction</h3>
+            <p>Your satisfaction is our top priority. We are committed to providing great customer service and high-quality products.</p>
+        </div>
+        <div class="why-us-item">
+            <i class="fas fa-hand-holding-usd"></i>
+            <h3>Affordable Prices</h3>
+            <p>We offer stylish clothing at affordable prices, so you can look great without breaking the bank.</p>
+        </div>
     </div>
 </section>
 

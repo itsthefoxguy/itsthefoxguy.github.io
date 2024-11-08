@@ -298,7 +298,7 @@
 
 <footer>
     <p>&copy; 2024 Merch Store | All rights reserved</p>
-    <a href="https://discord.com" class="discord-button"><i class="fab fa-discord"></i> Join Our Discord</a>
+    <a href="https://discord.gg/N8hgGWer2c" class="discord-button"><i class="fab fa-discord"></i> Join Our Discord</a>
 </footer>
 
 <script>

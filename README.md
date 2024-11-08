@@ -158,15 +158,17 @@
             background-color: #45a049;
         }
 
+        /* Footer */
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 15px 20px;
-            position: fixed;
+            position: relative; /* Endret fra fixed til relative for bedre layout */
             width: 100%;
-            bottom: 0;
+            box-sizing: border-box; /* Sørger for at padding ikke ødelegger layouten */
         }
+
     </style>
 
     <!-- PayPal SDK -->
@@ -280,4 +282,18 @@
             onError: function(err) {
                 alert('Something went wrong. Please try again later.');
             }
-        }).render('#paypal-button
+        }).render('#paypal-button-container-' + productId);  // Button placement
+    }
+
+    // Run the function when the document is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+        renderPaypalButton(1, '199.00');
+        renderPaypalButton(2, '399.00');
+        renderPaypalButton(3, '349.00'); // Hettegenser
+        renderPaypalButton(4, '249.00');
+    });
+</script>
+
+</body>
+
+</html>

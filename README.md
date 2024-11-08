@@ -171,39 +171,34 @@
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 15px 20px;
-            position: fixed;
+            padding: 20px 0;
+            position: relative;
             width: 100%;
-            bottom: 0;
-            display: flex;
-            justify-content: center; /* Sentraliserer innholdet horisontalt */
-            align-items: center; /* Sentraliserer innholdet vertikalt */
-            gap: 10px; /* Legger til mellomrom mellom teksten og Discord-knappen */
-            box-sizing: border-box; /* Sørger for at padding og margin ikke påvirker totalbredde */
         }
 
         footer p {
             margin: 0;
-            font-size: 1em;
+            font-size: 1.1em;
         }
 
         .discord-button {
+            display: inline-block;
             background-color: #7289da;
             color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
             text-decoration: none;
-            font-size: 1.2em;
-            display: inline-block;
+            padding: 10px 20px;
             margin-top: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .discord-button i {
+            margin-right: 8px;
         }
 
         .discord-button:hover {
             background-color: #5b6eae;
-        }
-
-        .discord-button i {
-            margin-right: 10px;
         }
     </style>
 
